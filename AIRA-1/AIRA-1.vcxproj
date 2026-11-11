@@ -141,13 +141,13 @@
   <ItemGroup>
     <ClCompile Include="GameConfig.cpp" />
     <ClCompile Include="GameDisplay.cpp" />
-    <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="GameRoundState.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameConfig.h" />
     <ClInclude Include="GameDisplay.h" />
-    <ClInclude Include="GameState.h" />
+    <ClInclude Include="GameRoundState.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

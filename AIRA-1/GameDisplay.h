@@ -1,10 +1,11 @@
 #pragma once
 
-#include "GameState.h"
+#include "GameRoundState.h"
 
 class GameDisplay
 {
 public:
-	void DisplayRoundStatistics(GameState state);
+	void ShowRoundStatistics(GameRoundState state); // раунды после первого
+	void ShowFirstRound(GameRoundState state); // первый раунд
 };
 
