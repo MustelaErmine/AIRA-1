@@ -1,5 +1,5 @@
 #pragma once
 
 struct GameConfig {
-	int number_of_rounds = 10;
+	static int number_of_rounds = 10;
 };

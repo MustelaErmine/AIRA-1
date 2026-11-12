@@ -3,5 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="AIRA-1-Lib/AIRA-1-Lib.vcxproj" Id="93a34df5-a031-4421-b101-1a6ea36bc1ad" />
+  <Project Path="AIRA-1-Tests/AIRA-1-Tests.vcxproj" Id="0fa3f130-3959-4414-bd7e-9ebcc8eea2d7" />
   <Project Path="AIRA-1/AIRA-1.vcxproj" Id="c2daa7fd-0e5b-4b12-80bf-87ae24bddc73" />
 </Solution>
