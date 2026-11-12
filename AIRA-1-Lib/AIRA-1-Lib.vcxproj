@@ -160,11 +160,9 @@
     <ClInclude Include="RandomStaffProvider.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GameConfig.cpp" />
     <ClCompile Include="GameDisplay.cpp" />
     <ClCompile Include="GameResult.cpp" />
     <ClCompile Include="GameRoundState.cpp" />
-    <ClCompile Include="PlayerRoundInput.cpp" />
     <ClCompile Include="RandomStaffProvider.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

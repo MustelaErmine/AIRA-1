@@ -13,5 +13,6 @@ public:
 	static PlayerRoundInput promptUser();
 
 	static void showEndgame(result_t result);
+	static void showLoss();
 };
 

@@ -22,6 +22,9 @@ private:
 
     float getFloat(float min, float max);
 
-    template<typename random_output_t>
-    random_output_t getValue(random_output_t min, random_output_t max);
+    template<typename TOutput>
+    TOutput getValue(TOutput min, TOutput max);
 };
+
+RandomStaffProvider getProvider();
+void makeProvider();

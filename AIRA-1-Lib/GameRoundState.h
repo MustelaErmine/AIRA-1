@@ -23,8 +23,15 @@ public:
 	population_t total_number_of_died;
 
 	static GameRoundState MakeDefault();
-	GameRoundState PerformRound(PlayerRoundInput input);
 
 private:
 	bool canPerform(PlayerRoundInput input);
 };
+
+class RoundPerformResult {
+public:
+	GameRoundState new_state;
+	bool loss_imediatly;
+};
+
+RoundPerformResult PerformRound(GameRoundState previous, PlayerRoundInput input);

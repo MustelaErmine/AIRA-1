@@ -15,39 +15,39 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\AIRA-1\RandomStaffProvider.h">
+    <ClInclude Include="GameConfig.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\AIRA-1\GameConfig.h">
+    <ClInclude Include="GameDisplay.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\AIRA-1\GameDisplay.h">
+    <ClInclude Include="GameResult.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\AIRA-1\GameRoundState.h">
+    <ClInclude Include="GameRoundState.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\AIRA-1\GameTypes.h">
+    <ClInclude Include="GameTypes.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\AIRA-1\PlayerRoundInput.h">
+    <ClInclude Include="PlayerRoundInput.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomStaffProvider.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\AIRA-1\RandomStaffProvider.cpp">
+    <ClCompile Include="GameDisplay.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\AIRA-1\GameConfig.cpp">
+    <ClCompile Include="GameResult.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\AIRA-1\GameDisplay.cpp">
+    <ClCompile Include="GameRoundState.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\AIRA-1\GameRoundState.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="..\AIRA-1\PlayerRoundInput.cpp">
+    <ClCompile Include="RandomStaffProvider.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

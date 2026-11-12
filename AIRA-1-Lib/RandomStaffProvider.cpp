@@ -12,9 +12,15 @@ float RandomStaffProvider::getFloat(float min, float max) {
     return dist(generator);
 }
 
-template<typename random_output_t>
-random_output_t RandomStaffProvider::getValue(random_output_t min, random_output_t max) {
-    std::uniform_real_distribution<random_output_t> dist(min, max);
+template<typename TOutput>
+TOutput RandomStaffProvider::getValue(TOutput min, TOutput max) {
+    std::uniform_real_distribution<TOutput> dist(min, max);
+    return dist(generator);
+}
+
+template<>
+bushels_t RandomStaffProvider::getValue(bushels_t min, bushels_t max) {
+    std::uniform_int_distribution<bushels_t> dist(min, max);
     return dist(generator);
 }
 
@@ -36,4 +42,14 @@ bushels_t RandomStaffProvider::getWheetDestroyed(bushels_t old_wheet) {
 bool RandomStaffProvider::getWasPlague() {
     float random_num = getFloat(0, 1);
     return random_num <= 0.15;
+}
+
+RandomStaffProvider provider;
+
+void makeProvider() {
+    provider = RandomStaffProvider();
+}
+
+RandomStaffProvider getProvider() {
+    return provider;
 }
