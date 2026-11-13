@@ -33,7 +33,7 @@ bushels_t RandomStaffProvider::getAcrPerfomance() {
 }
 
 bushels_t RandomStaffProvider::getWheetDestroyed(bushels_t old_wheet) {
-    float destroyed_rate = getFloat(0, 0.07);
+    float destroyed_rate = getFloat(0, 0.07f);
     
     bushels_t destroyed_wheet = static_cast<bushels_t>(std::roundf(static_cast<float>(old_wheet) * destroyed_rate));
     return destroyed_wheet;

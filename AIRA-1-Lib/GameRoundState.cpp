@@ -15,10 +15,13 @@ GameRoundState GameRoundState::MakeDefault() {
 	state.plague_was = false;
 	state.wheat_got = 0;
 	state.wheat_avg = 0;
+	state.wheat_added = 0;
 	state.wheat_destroyed = 0;
 	state.acr_cost = provider.getAcrCost();
 
 	state.total_number_of_died = 0;
+
+	state.years_passed = 0;
 
 	return state;
 }
@@ -38,7 +41,8 @@ RoundPerformResult PerformRound(GameRoundState previous, PlayerRoundInput input)
 
 	// wheat being sowed
 	state.wheat_avg = provider.getAcrPerfomance();
-	state.wheat += state.wheat_avg * input.area_to_sow;
+	state.wheat_added = state.wheat_avg * input.area_to_sow;
+	state.wheat += state.wheat_added;
 
 	// wheat being destroyed
 	state.wheat_destroyed = provider.getWheetDestroyed(state.wheat);
@@ -73,6 +77,9 @@ RoundPerformResult PerformRound(GameRoundState previous, PlayerRoundInput input)
 	// new area cost
 	state.acr_cost = provider.getAcrCost();
 
+	// years increment
+	++state.years_passed;
+
 	auto result = RoundPerformResult();
 	result.new_state = state;
 	result.loss_imediatly = false;
@@ -87,7 +94,7 @@ bool GameRoundState::canPerform(PlayerRoundInput input) {
 		&& input.bushels_to_eat >= 0;
 	
 	area_t new_area = area + input.area_to_buy - input.area_to_sell;
-	bool can_sow_area = new_area <= input.area_to_sow;
+	bool can_sow_area = new_area >= input.area_to_sow;
 	bool can_sow_people = input.area_to_sow <= population * 10;
 
 	bushels_t buy_cost = input.area_to_buy * acr_cost;

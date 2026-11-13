@@ -17,6 +17,7 @@ public:
 	bool plague_was;
 	bushels_t wheat_got;
 	bushels_t wheat_avg;
+	bushels_t wheat_added;
 	bushels_t wheat_destroyed;
 	bushels_t acr_cost;
 
@@ -24,7 +25,6 @@ public:
 
 	static GameRoundState MakeDefault();
 
-private:
 	bool canPerform(PlayerRoundInput input);
 };
 

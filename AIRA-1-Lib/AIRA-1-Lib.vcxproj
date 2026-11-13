@@ -119,6 +119,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -153,17 +154,21 @@
   <ItemGroup>
     <ClInclude Include="GameConfig.h" />
     <ClInclude Include="GameDisplay.h" />
+    <ClInclude Include="GameLoop.h" />
     <ClInclude Include="GameResult.h" />
     <ClInclude Include="GameRoundState.h" />
     <ClInclude Include="GameTypes.h" />
     <ClInclude Include="PlayerRoundInput.h" />
     <ClInclude Include="RandomStaffProvider.h" />
+    <ClInclude Include="RoundStateReadWriter.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameDisplay.cpp" />
+    <ClCompile Include="GameLoop.cpp" />
     <ClCompile Include="GameResult.cpp" />
     <ClCompile Include="GameRoundState.cpp" />
     <ClCompile Include="RandomStaffProvider.cpp" />
+    <ClCompile Include="RoundStateReadWriter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -11,6 +11,7 @@ public:
 	static void showFirstRound(GameRoundState state); // первый раунд
 
 	static PlayerRoundInput promptUser();
+	static void showIncorrectInput(GameRoundState state);
 
 	static void showEndgame(result_t result);
 	static void showLoss();
